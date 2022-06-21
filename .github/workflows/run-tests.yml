@@ -30,6 +30,6 @@ jobs:
           username: ${{ secrets.SSH_USERNAME }}
           script: |
             pip install gunicorn flask
-            cd /home/winc-cd
+            cd /home/assignment-cd
             git pull
-            systemctl restart winc-cd
+            systemctl restart assignment-cd
